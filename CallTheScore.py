@@ -61,9 +61,12 @@ if __name__ == "__main__":
             else:
                 print "Invalid Input!"
                 print_usage()
+                continue
+                
         except ValueError:      # Catch user entering string or other invalid input
             print "Invalid Input!"
             print_usage()
+            continue
 
         message, matchWon = call_the_scores(player1, player2)
 
