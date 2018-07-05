@@ -35,11 +35,11 @@ def call_the_scores(score1, score2):
 
 
 def print_usage():
-    print("Enter 0 to call the score, 1 if Player1 scores and 2 if Player2 scores:")
+    print("Enter 0 to call the score, 1 if Player1 scores or 2 if Player2 scores:")
 
 
 if __name__ == "__main__":
-    print('Enter 0 to call the score, 1 if Player1 scores and 2 if Player2 scores:')
+    print_usage()
 
     # Initialise Player1 and Player2 to zero scores
     player1 = 0
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     matchWon = False
     printScore = False
 
-    # Read from stdin to decide who has score the next point.
+    # Read from stdin to decide who has scored the next point.
     while True:
         printScore = False
         try:
